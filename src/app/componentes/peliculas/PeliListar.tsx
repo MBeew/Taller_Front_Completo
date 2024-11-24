@@ -24,24 +24,23 @@ export const PeliListar = () => {
               <tr>
                 <th>Código</th>
                 <th>Nombre película</th>                
-                <th>Género</th>
                 <th>Protagonista</th>
+                <th>Genero</th>
                 <th>Imagen</th>
               </tr>
             </thead>
             <tbody>
-
-              {arrPeliculas.map((miPeli: Pelicula)=>(
-              <tr>
+            {arrPeliculas.map((miPeli: Pelicula)=>(
+                <tr key={miPeli.codGeneroPelicula} className="align-middle">
                 <th>{miPeli.codPelicula}</th>
                 <td>{miPeli.nombrePelicula}</td>
-                <td>{obtenerNombre(miPeli.codGeneroPelicula)}</td>
                 <td>{miPeli.protagonistaPelicula}</td>
-                <td>{miPeli.imagenPelicula}</td>
+                <td>{obtenerNombre(miPeli.codGeneroPelicula)}</td>
+                <td>
+                  <img src={miPeli.imagenPeliculaBase64} alt="no hay" className="imagenListado"/>
+                </td>
               </tr>   
               ))}
-
-
             </tbody>
           </table>
         </div>

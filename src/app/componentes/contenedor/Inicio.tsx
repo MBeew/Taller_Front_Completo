@@ -8,8 +8,12 @@ export const Inicio = () => {
             <p>
               Al mejor sitio de películas, donde podrás estar actualizado...
             </p>
-            <button className="btn btn-outline-light" type="button">
-              Example button
+            <button
+              className="btn btn-outline-light"
+              type="button"
+              onClick={() => (window.location.href = "/pelicre")}
+            >
+              Iniciar
             </button>
           </div>
         </div>
