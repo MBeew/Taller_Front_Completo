@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import { Acerca } from "../../componentes/otros/Acerca";
 import { Inicio } from "../../componentes/contenedor/Inicio";
-import { PeliAdmin } from "../../componentes/peliculas/PeliAdmin";
+import { PeliAdmin} from "../../componentes/peliculas/PeliAdmin";
 import { PeliCrear } from "../../componentes/peliculas/PeliCrear";
 import { PeliListar } from "../../componentes/peliculas/PeliListar";
 import { PeliActualizar } from "../../componentes/peliculas/PeliActualizar";
